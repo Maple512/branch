@@ -1,0 +1,29 @@
+name: publish
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-dotnet@main
+        with:
+          dotnet-version: 5.0.*
+
+      # - name: restore
+      #   run: dotnet restore
+
+      # - name: build
+      #   run: dotnet build --no-restore -c Release
+
+      # - name: tset
+      #   run: dotnet test --no-restore -c Release
+
+      # - name: pack
+      #   run: dotnet pack --no-restore -o packages
+
+      # - name: publish
+      #   run: dotnet nuget push ./packages/*.nupkg -k ${{ secrets.PUBLISH_NUGET_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate --no-service-endpoint

@@ -1,0 +1,7 @@
+<Project>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\$(MSBuildProjectName).xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
