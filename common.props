@@ -6,12 +6,13 @@
     <VersionPrefix>0.0.1</VersionPrefix>
     <VersionSuffix>rc.1</VersionSuffix>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RootNamespace />
   </PropertyGroup>
 
   <!--authors-->
   <PropertyGroup>
-    <Authors>mapleclub</Authors>
-    <Product>MapleClub CSharp Template</Product>
+    <Authors>Maple512</Authors>
+    <Product>branch</Product>
   </PropertyGroup>
 
   <!--warn-->
@@ -27,11 +28,10 @@
   <!--repository-->
   <PropertyGroup>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/mapleclub/csharp-template</RepositoryUrl>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/maple512/branch</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <Import Project="./configureawait.props" />
-  <Import Project="./sourcelink.props" Condition="$(IsGithubAction)=='true'" />
 
 </Project>

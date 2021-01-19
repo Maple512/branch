@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>$(NetFramework)</TargetFramework>
+    <PackageId>$(PackageIdPrefix).DynamicProxy</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.1" />
+    <PackageReference Include="Castle.Core.AsyncInterceptor" Version="2.0.21-alpha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Maple.Branch.Core\Maple.Branch.Core.csproj" />
+  </ItemGroup>
+
+</Project>

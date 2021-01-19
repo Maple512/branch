@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>$(NetFramework)</TargetFramework>
+    <PackageId>$(PackageIdPrefix).TestBase</PackageId>
+    <RootNamespace>$(PackageId)</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Maple.Branch.Core\Maple.Branch.Core.csproj" />
+  </ItemGroup>
+
+</Project>

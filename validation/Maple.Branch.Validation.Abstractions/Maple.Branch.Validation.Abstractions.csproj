@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>$(NetFramework)</TargetFramework>
+    <PackageId>$(PackageIdPrefix).Validation.Abstractions</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Maple.Branch.Core.Abstractions\Maple.Branch.Core.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

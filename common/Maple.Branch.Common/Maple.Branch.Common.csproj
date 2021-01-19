@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>$(NetFramework)</TargetFramework>
+    <PackageId>$(PackageIdPrefix).Common</PackageId>
+    <RootNamespace>$(PackageIdPrefix)</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MapleClub.Utility.Source" Version="0.0.2" NoWarn="CS8602">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\localization\Maple.Branch.Localization.Abstractions\Maple.Branch.Localization.Abstractions.csproj" />
+    <ProjectReference Include="..\..\logging\Maple.Branch.Logging.Abstractions\Maple.Branch.Logging.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
