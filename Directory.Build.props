@@ -1,0 +1,26 @@
+<Project>
+
+  <PropertyGroup>
+    <!--MapleClub.Extensions-->
+    <PackageIdPrefix>MapleClub.Extensions</PackageIdPrefix>
+
+    <NetFramework>net5.0</NetFramework>
+    <NetStandardFramework>netstandard2.1</NetStandardFramework>
+
+    <!-- Microsoft packages -->
+    <MicrosoftPackageVersion>5.0.0</MicrosoftPackageVersion>
+
+    <!--Microsoft Test Version-->
+    <MicrosoftNetTestVersion>16.7.1</MicrosoftNetTestVersion>
+
+    <!--Volo Abp Packages-->
+    <VoloAbpPackageVersion>4.0.2</VoloAbpPackageVersion>
+
+    <!--github action-->
+    <IsGithubAction Condition="'$(GITHUB_ACTIONS)' == 'true'">true</IsGithubAction>
+
+    <!--test sdk-->
+    <MicrosoftTestSdk>16.8.3</MicrosoftTestSdk>
+  </PropertyGroup>
+
+</Project>

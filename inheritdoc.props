@@ -1,0 +1,21 @@
+<Project>
+
+  <!--
+  see dotnet/csharplang: Add a way to inherit documentation <inheritdoc />
+  go: https://github.com/dotnet/csharplang/issues/313
+  solution: https://github.com/dotnet/csharplang/issues/313#issuecomment-536122419
+  SauceControl.InheritDoc: https://github.com/saucecontrol/InheritDoc
+  -->
+
+  <!--<PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <InheritDocEnabled>true</InheritDocEnabled>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(Configuration)'=='Debug'">
+    <PackageReference Include="SauceControl.InheritDoc" Version="1.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>-->
+
+</Project>
