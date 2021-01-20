@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>$(NetFramework)</TargetFramework>
+    <PackageId>$(PackageIdPrefix).MultiTenancy</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Maple.Branch.Core.Abstractions\Maple.Branch.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\..\data\Maple.Branch.Data\Maple.Branch.Data.csproj" />
+    <ProjectReference Include="..\Maple.Branch.MultiTenancy.Abstractions\Maple.Branch.MultiTenancy.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -6,6 +6,7 @@ using System.Runtime.Serialization;
 
 namespace Maple.Branch
 {
+    [Serializable]
     public class BranchException : Exception
     {
         public BranchException()

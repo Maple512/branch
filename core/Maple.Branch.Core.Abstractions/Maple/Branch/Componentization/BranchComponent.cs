@@ -11,7 +11,7 @@ namespace Maple.Branch.Componentization
     {
         public ConfigureSerivcesContext? Context { get; private set; }
 
-        public void OnPreConfigureServices(ConfigureSerivcesContext context)
+        public virtual void OnPreConfigureServices(ConfigureSerivcesContext context)
         {
 
         }
@@ -21,7 +21,7 @@ namespace Maple.Branch.Componentization
 
         }
 
-        public void OnPostConfigureServices(ConfigureSerivcesContext context)
+        public virtual void OnPostConfigureServices(ConfigureSerivcesContext context)
         {
 
         }

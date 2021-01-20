@@ -167,4 +167,4 @@ dotnet_code_quality.ca1802.api_surface = private, internal
 dotnet_code_quality.ca2208.api_surface = public
 
 # License header
-file_header_template = Copyright (c) MapleClub. All rights reserved.\nLicensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
+file_header_template = Copyright (c) Maple512. All rights reserved.\nLicensed under the MIT License. See LICENSE in the project root for license information.

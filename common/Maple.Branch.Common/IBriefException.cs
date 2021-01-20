@@ -4,9 +4,10 @@
 namespace Maple.Branch
 {
     /// <summary>
-    /// 用户友好异常（不处理异常详细信息，会传递到UI）
+    /// 简要异常（重写异常消息，使之不传递到UI）
     /// </summary>
-    public interface IUserFriendlyException
+    public interface IBriefException
     {
+
     }
 }

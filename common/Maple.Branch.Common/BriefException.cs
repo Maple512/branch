@@ -6,25 +6,26 @@ using System.Runtime.Serialization;
 
 namespace Maple.Branch
 {
-    /// <inheritdoc cref="IUserFriendlyException"/>
+    /// <inheritdoc cref="IBriefException"/>
     [Serializable]
-    public class UserFriendlyException : BranchException, IUserFriendlyException
+    public class BriefException : BranchException,
+        IBriefException
     {
-        public UserFriendlyException(
+        public BriefException(
             string? message = null,
             Exception? innerException = null)
-            : base(
-                  message,
-                  innerException)
+            : base(message, innerException)
         {
+
         }
 
         /// <summary>
         /// Constructor for serializing.
         /// </summary>
-        public UserFriendlyException(SerializationInfo serializationInfo, StreamingContext context)
+        public BriefException(SerializationInfo serializationInfo, StreamingContext context)
             : base(serializationInfo, context)
         {
+
         }
     }
 }

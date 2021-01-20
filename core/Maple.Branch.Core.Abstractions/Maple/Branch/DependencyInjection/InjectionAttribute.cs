@@ -12,22 +12,27 @@ namespace Maple.Branch.DependencyInjection
     [AttributeUsage(AttributeTargets.Class)]
     public class InjectionAttribute : Attribute
     {
+        public InjectionAttribute()
+        {
+
+        }
+
         public InjectionAttribute(ServiceLifetime lifetime)
         {
             Lifetime = lifetime;
         }
 
         /// <inheritdoc cref="ServiceLifetime"/>
-        public ServiceLifetime Lifetime { get; }
+        public ServiceLifetime? Lifetime { get; set; }
 
         /// <summary>
         /// 尝试在DI容器中注册
         /// </summary>
-        public bool TryRegister { get; }
+        public bool TryRegister { get; set; }
 
         /// <summary>
         /// 替换DI容器中第一个相同的对象
         /// </summary>
-        public bool ReplaceService { get; }
+        public bool ReplaceService { get; set; }
     }
 }
