@@ -2,6 +2,7 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using System;
+using System.Runtime.Versioning;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,17 +14,14 @@ namespace Maple.Branch.Componentization
 
         public virtual void OnPreConfigureServices(ConfigureSerivcesContext context)
         {
-
         }
 
         public virtual void OnConfigureServices(ConfigureSerivcesContext context)
         {
-
         }
 
         public virtual void OnPostConfigureServices(ConfigureSerivcesContext context)
         {
-
         }
 
         public void SetConfigureServicesContext(ConfigureSerivcesContext context)

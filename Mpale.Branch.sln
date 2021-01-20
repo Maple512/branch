@@ -45,11 +45,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{8F474369-A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "multitenancy", "multitenancy", "{92355BBC-5365-499E-A271-59D1336E2353}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maple.Branch.MultiTenancy", "multitenancy\Maple.Branch.MultiTenancy\Maple.Branch.MultiTenancy.csproj", "{AD46A77A-D024-4250-9272-15291048FD37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maple.Branch.MultiTenancy", "multitenancy\Maple.Branch.MultiTenancy\Maple.Branch.MultiTenancy.csproj", "{AD46A77A-D024-4250-9272-15291048FD37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maple.Branch.MultiTenancy.Abstractions", "multitenancy\Maple.Branch.MultiTenancy.Abstractions\Maple.Branch.MultiTenancy.Abstractions.csproj", "{CE00E427-CA14-4044-8D6F-A5D5AB71E52C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maple.Branch.MultiTenancy.Abstractions", "multitenancy\Maple.Branch.MultiTenancy.Abstractions\Maple.Branch.MultiTenancy.Abstractions.csproj", "{CE00E427-CA14-4044-8D6F-A5D5AB71E52C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maple.Branch.Data", "data\Maple.Branch.Data\Maple.Branch.Data.csproj", "{2E0E2733-51DC-41BB-BA85-B3A1660C6BEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maple.Branch.Data", "data\Maple.Branch.Data\Maple.Branch.Data.csproj", "{2E0E2733-51DC-41BB-BA85-B3A1660C6BEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "security", "security", "{851C318D-8D65-48A1-97D4-234777650EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maple.Branch.Security", "security\Maple.Branch.Security\Maple.Branch.Security.csproj", "{E6645AE0-BAB9-48C7-A717-48D6B5594168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maple.Branch.Security.Abstractions", "security\Maple.Branch.Security.Abstractions\Maple.Branch.Security.Abstractions.csproj", "{0A719865-6138-44CE-9C80-3F042F6AFC5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -205,6 +211,30 @@ Global
 		{2E0E2733-51DC-41BB-BA85-B3A1660C6BEB}.Release|x64.Build.0 = Release|Any CPU
 		{2E0E2733-51DC-41BB-BA85-B3A1660C6BEB}.Release|x86.ActiveCfg = Release|Any CPU
 		{2E0E2733-51DC-41BB-BA85-B3A1660C6BEB}.Release|x86.Build.0 = Release|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Debug|x64.Build.0 = Debug|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Debug|x86.Build.0 = Debug|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Release|x64.ActiveCfg = Release|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Release|x64.Build.0 = Release|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Release|x86.ActiveCfg = Release|Any CPU
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168}.Release|x86.Build.0 = Release|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Debug|x64.Build.0 = Debug|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Debug|x86.Build.0 = Debug|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Release|x64.ActiveCfg = Release|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Release|x64.Build.0 = Release|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Release|x86.ActiveCfg = Release|Any CPU
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -222,6 +252,8 @@ Global
 		{AD46A77A-D024-4250-9272-15291048FD37} = {92355BBC-5365-499E-A271-59D1336E2353}
 		{CE00E427-CA14-4044-8D6F-A5D5AB71E52C} = {92355BBC-5365-499E-A271-59D1336E2353}
 		{2E0E2733-51DC-41BB-BA85-B3A1660C6BEB} = {8F474369-A85C-4EE5-90C8-50D10B57F188}
+		{E6645AE0-BAB9-48C7-A717-48D6B5594168} = {851C318D-8D65-48A1-97D4-234777650EDF}
+		{0A719865-6138-44CE-9C80-3F042F6AFC5F} = {851C318D-8D65-48A1-97D4-234777650EDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93864006-516B-4514-A16C-EE2510922459}
