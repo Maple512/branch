@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Maple.Branch.Core.Abstractions\Maple.Branch.Core.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

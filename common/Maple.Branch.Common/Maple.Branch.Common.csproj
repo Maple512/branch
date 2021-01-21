@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MapleClub.Utility.Source" Version="0.0.2" NoWarn="CS8602">
+    <PackageReference Include="MapleClub.Utility.Source" Version="0.0.4" NoWarn="CS8602">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

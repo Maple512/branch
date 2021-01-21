@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>$(NetFramework)</TargetFramework>
+    <PackageId>$(PackageIdPrefix).EventBus</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Maple.Branch.Core.Abstractions\Maple.Branch.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\Maple.Branch.EventBus.Abstractions\Maple.Branch.EventBus.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

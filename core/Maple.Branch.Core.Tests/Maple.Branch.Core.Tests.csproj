@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\test\Maple.Branch.TestBase\Maple.Branch.TestBase.csproj" />
+    <ProjectReference Include="..\Maple.Branch.Core.Tests.Base\Maple.Branch.Core.Tests.Base.csproj" />
   </ItemGroup>
 
 </Project>

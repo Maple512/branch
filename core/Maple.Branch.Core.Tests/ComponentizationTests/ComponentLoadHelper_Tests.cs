@@ -3,6 +3,8 @@
 
 using System.Linq;
 using Maple.Branch.Componentization;
+using Maple.Branch.Core.Tests.Base;
+using Microsoft.Extensions.DependencyInjection;
 using Shouldly;
 using Xunit;
 
@@ -20,13 +22,25 @@ namespace Maple.Branch.Core.Tests.ComponentizationTests
             components.First().Type.ShouldBe(typeof(FirstComponent));
             components.Last().Type.ShouldBe(typeof(SecondComponent));
         }
+
+        [Fact]
+        public void Test()
+        {
+            var services = new ServiceCollection();
+
+            services.AddComponent<SecondComponent>();
+
+            var serviceProvider = services.BuildServiceProvider();
+
+            var a = serviceProvider.GetRequiredService<ITestService>();
+        }
     }
 
     internal class FirstComponent : BranchComponent
     {
     }
 
-    [DependsOn(typeof(FirstComponent))]
+    [DependsOn(typeof(FirstComponent), typeof(BranchCoreTestBaseComponent))]
     internal class SecondComponent : BranchComponent
     {
     }
